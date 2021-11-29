@@ -155,7 +155,7 @@
 <script>
 import { ChevronRightIcon, StarIcon } from "@heroicons/vue/solid";
 import { computed } from "vue";
-// import { useStore } from 'vuex';
+// import { useStore } from "vuex";
 
 export default {
   components: {
@@ -163,10 +163,10 @@ export default {
     StarIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
-      subheader: computed(() => store.state.hero.subheader),
-      description: computed(() => store.state.hero.description),
+      subheader: computed(() => "Sub header"),
+      description: computed(() => "Description"),
     };
   },
 };

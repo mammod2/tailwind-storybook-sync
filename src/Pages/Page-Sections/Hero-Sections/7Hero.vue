@@ -343,7 +343,7 @@ import {
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 import { computed } from "vue";
-// import { useStore } from 'vuex';
+// import { useStore } from "vuex";
 
 const solutions = [
   {
@@ -389,12 +389,12 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
       solutions,
       navigation,
-      subheader: computed(() => store.state.hero.subheader),
-      description: computed(() => store.state.hero.description),
+      subheader: computed(() => "Sub header"),
+      description: computed(() => "Description"),
     };
   },
 };

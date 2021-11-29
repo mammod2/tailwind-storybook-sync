@@ -366,7 +366,7 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 import { ChevronRightIcon } from "@heroicons/vue/solid";
 import { computed } from "vue";
-// import { useStore } from 'vuex';
+// import { useStore } from "vuex";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -385,11 +385,11 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
       navigation,
-      title: computed(() => store.state.businessDetail.businessName),
-      description: computed(() => store.state.hero.description),
+      title: computed(() => "Title"),
+      description: computed(() => "Description"),
     };
   },
 };

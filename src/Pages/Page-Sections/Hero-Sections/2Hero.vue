@@ -398,7 +398,7 @@ import {
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 import { computed } from "vue";
-// import { useStore } from 'vuex';
+// import { useStore } from "vuex";
 
 const features = [
   {
@@ -488,14 +488,14 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
       features,
       callsToAction,
       resources,
       recentPosts,
-      title: computed(() => store.state.businessDetail.businessName),
-      description: computed(() => store.state.hero.description),
+      title: computed(() => "Title"),
+      description: computed(() => "Description"),
     };
   },
 };
